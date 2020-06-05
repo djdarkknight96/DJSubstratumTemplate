@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/dialog_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginStart="24dip"
+    android:layout_marginEnd="24dip"
+    android:padding="8dip">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:text="@string/launch_dialog_title"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/accent_color"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="355dip"
+        android:layout_height="462dip"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:paddingBottom="16dip">
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="72dip"
+            android:layout_height="72dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/launch_dialog_title"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/image"
+            android:background="#00000000"
+            android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/telegram"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/link_telegram"
+            android:tint="@color/accent_color"
+            app:srcCompat="@drawable/ic_telegram" />
+
+        <ImageButton
+            android:id="@+id/changelog"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_changelog"
+            android:tint="@color/accent_color"
+            android:contentDescription="@string/link_changelog" />
+
+        <ImageButton
+            android:id="@+id/playstore"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_playstore"
+            android:tint="@color/accent_color"
+            android:contentDescription="@string/link_playstore" />
+
+        <ImageButton
+            android:id="@+id/twitter"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_twitter"
+            android:tint="@color/accent_color"
+            android:contentDescription="@string/link_twitter" />
+
+        <ImageButton
+            android:id="@+id/paypal"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_paypal"
+            android:tint="@color/accent_color"
+            android:contentDescription="@string/link_paypal" />
+
+        <ImageButton
+            android:id="@+id/gallery"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_gallery"
+            android:tint="@color/accent_color"
+            android:contentDescription="@string/link_gallery" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="1dip"
+            android:layout_marginTop="105dip"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingStart="16dip"
+            android:text="@string/launch_dialog_content"
+            android:textAlignment="center"
+            android:textColor="@color/accent_color"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/button_continue"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_below="@+id/dialog_content"
+            android:layout_marginStart="32dip"
+            android:layout_marginTop="24dip"
+            android:layout_marginEnd="32dip"
+            android:background="@drawable/btn_continue"
+            android:text="@string/proceed"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button_donate"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_below="@+id/dialog_content"
+            android:layout_marginStart="32dip"
+            android:layout_marginTop="75dip"
+            android:layout_marginEnd="32dip"
+            android:background="@drawable/btn_donate"
+            android:text="donate"
+            android:textColor="@color/accent_color"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/myCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="4dip"
+            android:background="@android:color/transparent"
+            android:buttonTint="@color/accent_color"
+            android:paddingStart="16dip"
+            android:paddingEnd="16dip"
+            android:text="@string/do_not_show_again"
+            android:textColor="@color/accent_color"
+            android:textSize="12sp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+</RelativeLayout>

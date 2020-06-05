@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<type0>
+    <!-- ABOUT RESOURCE ATTRIBUTES
+
+         lighten [0..1] adds the lightness component from the selected color that converted to HSL components
+         darken [0..1] subtracts the lightness component from the selected color that converted to HSL components
+         saturate [0..1] adds the saturation component from the selected color that converted to HSL components
+         desaturate [0..1] subtracts the saturation component from the selected color that converted to HSL components
+         alpha [0..1] controls the transparency of the generated color
+
+         alpha attribute in resource object will override the user selected alpha.
+         Preset colors with alpha is allowed when alpha_allowed is set true.
+
+         Multiple resources is possible in any condition.
+    -->
+
+    <type0a name="Type0a Color" color="#263238">
+        <preset>#303F9F</preset>
+        <preset>#C2185B</preset>
+        <preset>#D32F2F</preset>
+
+        <resource name="holo_blue_light" />
+        <resource name="holo_blue_dark" darken="0.2" />
+    </type0a>
+    <type0b name="Type0b Color" color="#263238">
+        <resource name="holo_blue_bright" alpha="0.5" darken="0.5" />
+        <resource name="holo_purple" lighten="0.2" saturate="0.3" />
+    </type0b>
+    <type0c name="Type0c Color" color="#21272b" alpha_allowed="true">
+        <preset>#21272b</preset>
+        <preset>#e621272b</preset>
+        <preset>#b321272b</preset>
+        <preset>#8021272b</preset>
+
+        <resource name="background_dark" />
+    </type0c>
+</type0>
