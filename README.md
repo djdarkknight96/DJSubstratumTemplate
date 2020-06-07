@@ -27,7 +27,7 @@ Disable activity launch on theme:
 ## Step 1: Package Naming
 The FIRST thing you need to change is the package identifier (the name the app identifies as) to something more meaningful to you. Open up [build.gradle](app/build.gradle) and look for this line
 ```
-applicationId "substratum.theme.template"
+applicationId "com.djdarkknight.theme.template"
 ```
 Change this to anything you want, for instance:
 ```
